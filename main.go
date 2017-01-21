@@ -10,7 +10,7 @@ import (
 var (
 	ehenPostURL string
 	folder      string
-	checkURL    = "http://g.e-hentai.org/g/"
+	checkURL    = "e-hentai.org/g/"
 	test        = "http://g.e-hentai.org/g/1020609/7df75786ee/"
 )
 
@@ -42,7 +42,8 @@ func main() {
 	if len(ehenPostURL) == 0 {
 		flag.Usage()
 	} else if strings.Contains(ehenPostURL, checkURL) == false {
-		fmt.Println("Please key-in URL like as http://g.e-hentai.org/g/831308/855ebdd842/")
+		fmt.Println("Please key-in URL like as https://e-hentai.org/g/831308/855ebdd842/")
+		os.Exit(0)
 	}
 
 	run()

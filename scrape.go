@@ -29,7 +29,8 @@ func GetHtml(URL string) (res *http.Response) {
 
 	res, err = client.Do(req)
 	if err != nil {
-		log.Fatalln(err)
+		// log.Fatalln(err)
+		fmt.Println(err)
 	}
 
 	return
